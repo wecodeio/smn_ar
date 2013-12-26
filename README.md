@@ -1,6 +1,6 @@
 # SmnAr
 
-Esta gema expone el pronóstico meteorológico publicado publicado por el [Servicio Meteorológico Nacional](http://example.com/ "SMN") argentino
+Esta gema expone el pronóstico meteorológico publicado publicado por el [Servicio Meteorológico Nacional](http://www.smn.gov.ar/ "SMN") argentino
 
 ## Installation
 
@@ -25,7 +25,7 @@ require "date"
 pronostico = SmnAr::Pronostico.new(ciudad)
 pronostico.temperatura_actual # => 32.4
 temp = pronostico[Date.today] # pronóstico para hoy y los próximos tres días
-temp.mimima # => 25
+temp.minima # => 25
 temp.maxima # => 37
 pronostico[Date.today+4] # => nil
 
