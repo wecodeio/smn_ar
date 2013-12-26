@@ -1,3 +1,9 @@
 module SmnAr
-  class Temperatura < Struct.new(:minima, :maxima); end
+  class Temperatura
+    attr_reader :minima, :maxima
+
+    def initialize(minima, maxima)
+      @minima, @maxima = minima, maxima
+    end
+  end
 end
